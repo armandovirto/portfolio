@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armando Virto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+</head>
+<body class="overflow-x-hidden font-Outfit bg-[#1F1F1F] text-white">
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-center z-50">
+        <ul
+            class="hidden md:flex items-center justify-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
+            <li><a href="#top" class="hover:text-[#4ADE80]">Home</a></li>
+            <li><a href="#about" class="hover:text-[#4ADE80]">Sobre mí</a></li>
+            <li><a href="#services" class="hover:text-[#4ADE80]">Servicios</a></li>
+        </ul>
+        <!-- mobile menu -->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 
+        bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
+            </div>
+            <li><a href="#about" onclick="closeMenu()">Sobre mí</a></li>
+            <li><a href="#services" onclick="closeMenu()">Servicios</a></li>
+        </ul>
+    </nav>
+    <!--header-->
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./images/armandoProfile.jpg" alt="" class="rounded-full w-40">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hola, soy <span
+                style="color: #4ADE80;">Armando</span> Virto</h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Instructional Designer</h1>
+        <p class="max-w-2xl mx-auto font-Ovo">Creo experiencias de aprendizaje únicas, combinando <span
+                style="color: #4ADE80;">creatividad</span>, <span style="color: #4ADE80;">tecnología</span> y <span
+                style="color: #4ADE80;">pasión</span>.</p>
+        <!-- Social links -->
+        <ul class="flex flex-wrap justify-center items-center gap-4 mt-6">
+            <li>
+                <a href="https://pk.linkedin.com/in/armandovirto" target="_blank"
+                    class="w-14 h-14 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-[#0A66C2] hover:text-[#0A66C2] transition duration-300">
+                    <i class="lab la-linkedin-in text-2xl"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/armandovirto" target="_blank"
+                    class="w-14 h-14 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-[#6e40c9] hover:text-[#6e40c9] transition duration-300">
+                    <i class="lab la-github text-2xl"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.link/gv7ofw" target="_blank"
+                    class="w-14 h-14 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-green-500 hover:text-green-500 transition duration-300">
+                    <i class="lab la-whatsapp text-2xl"></i>
+                </a>
+            </li>
+            <li>
+                <a href="armando.gonzalez@cybolt.com"
+                    class="w-14 h-14 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-rose-500 hover:text-rose-500 transition duration-300">
+                    <i class="lab las la-envelope text-2xl"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- about me -->
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">Introducción</h4>
+        <h2 class="text-center text-5xl font-Ovo">Sobre mí</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-10 my-10">
+            <div class="max-w-max mx-auto relative">
+                <img src="./images/armandoAboutMe.png" alt="" class="w-64 sm:w-80 
+            rounded-3xl max-w-none">
+            </div>
+            <div class="flex items-center justify-center px-4">
+                <div class="flex-1 max-w-5xl w-full">
+                    <p class="mb-10 text-base sm:text-lg text-gray-300 font-Ovo">Soy un diseñador instruccional
+                        apasionado
+                        por transformar el aprendizaje en una experiencia significativa y motivadora. Mi objetivo es
+                        crear soluciones que no solo capten la atención, sino que también impulsen resultados concretos
+                        para las organizaciones. Con una licenciatura en Filosofía por la Universidad Nacional Autónoma
+                        de México, combino pensamiento crítico y creatividad para diseñar cursos interactivos, basados
+                        en escenarios y gamificados, utilizando herramientas como Articulate Storyline, Rise 360 y
+                        Canva.</p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6">
+                        <li class="border-[0.5px] border-green-400 rounded-xl p-6 
+                    cursor-pointer hover:bg-[#6e40c9] hover:-translate-y-1 duration-500 
+                    hover:shadow-[4px_4px_0_#CCCCCC]">
+                            <img src="./images/code-icon.png" alt="" class="w-7 mt-3 max-w-full">
+                            <h3 class="my-4 font-semibold text-green-400">Languages</h3>
+                            <p class="text-white text-sm"> HTML, CSS, R, Python</p>
+                        </li>
+                        <li class="border-[0.5px] border-green-400 rounded-xl p-6 
+                    cursor-pointer hover:bg-[#0A66C2] hover:-translate-y-1 duration-500 
+                    hover:shadow-[4px_4px_0_#CCCCCC]">
+                            <img src="./images/edu-icon.png" alt="" class="w-7 mt-3 max-w-full">
+                            <h3 class="my-4 font-semibold text-green-400">Education</h3>
+                            <p class="text-white text-sm">Certificate Program in Applied Generative AI by JHU</p>
+                        </li>
+                        <li class="border-[0.5px] border-green-400 rounded-xl p-6 
+                    cursor-pointer hover:bg-[#F43E5C] hover:-translate-y-1 duration-500 
+                    hover:shadow-[4px_4px_0_#CCCCCC]">
+                            <img src="./images/project-icon.png" alt="" class="w-7 mt-3 max-w-full">
+                            <h3 class="my-4 font-semibold text-green-400">ID Skills</h3>
+                            <p class="text-white text-sm"> Articulate Storyline, Rise 360, Moodle LMS</p>
+                        </li>
+                    </ul>
+                    <h4 class="my-6 text-gray-200 font-Ovo">Herramientas que utilizo</h4>
+                    <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
+                        <li class="flex items-center justify-center w-12 sm:w-14 
+                    aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                    hover:-translate-y-1 duration-500">
+                            <img src="./images/vscode.png" alt="" class="w-5 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 sm:w-14 
+                    aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                    hover:-translate-y-1 duration-500">
+                            <img src="./images/storyline.png" alt="" class="w-5 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 sm:w-14 
+                    aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                    hover:-translate-y-1 duration-500">
+                            <img src="./images/rise.png" alt="" class="w-5 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 sm:w-14 
+                    aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                    hover:-translate-y-1 duration-500">
+                            <img src="./images/chatgpt.jpg" alt="" class="w-5 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 sm:w-14 
+                    aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                    hover:-translate-y-1 duration-500">
+                            <img src="./images/canva.png" alt="" class="w-5 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 sm:w-14 
+                    aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                    hover:-translate-y-1 duration-500">
+                            <img src="./images/capcut.png" alt="" class="w-5 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 sm:w-14 
+                    aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                    hover:-translate-y-1 duration-500">
+                            <img src="./images/moddle.png" alt="" class="w-5 sm:w-7">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Cómo puedo ayudarte</h4>
+        <h2 class="text-center text-5xl font-Ovo">Mis servicios</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Combino diseño instruccional, programación y diseño
+            visual para crear soluciones de aprendizaje que conectan, funcionan y se disfrutan.</p>
+        <div class="grid grid-cols-auto sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
+            <div class="group border border-green-400 rounded-lg px-8 py-12 
+    hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <img src="./images/mindmeister.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-300 group-hover:text-gray-700">Consulting</h3>
+                <p class="text-sm text-gray-200 leading-5 group-hover:text-gray-600">
+                    Juntos identificamos las necesidades de tu organización y
+                    trazamos acciones estratégicas que orienten una experiencia formativa de alto impacto.
+                </p>
+            </div>
+            <div class="group border border-green-400 rounded-lg px-8 py-12 
+    hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <img src="./images/canva.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-300 group-hover:text-gray-700">Storyboarding</h3>
+                <p class="text-sm text-gray-200 leading-5 group-hover:text-gray-600">
+                    Tras definir los objetivos y necesidades del proyecto,
+                    desarrollaré un storyboard detallado que guíe la narrativa, interacciones y recursos del curso.
+                </p>
+            </div>
+            <div class="group border border-green-400 rounded-lg px-8 py-12 
+    hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <img src="./images/storyline.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-300 group-hover:text-gray-700">e-Learning Development</h3>
+                <p class="text-sm text-gray-200 leading-5 group-hover:text-gray-600">
+                    Exploraremos opciones de desarrollo y elegirás el diseño
+                    visual que mejor se adapte a tu organización, alineados con tu presupuesto y tus tiempos.
+                </p>
+            </div>
+            <div class="group border border-green-400 rounded-lg px-8 py-12 
+    hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <img src="./images/media-icon.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-300 group-hover:text-gray-700">Multimedia Production</h3>
+                <p class="text-sm text-gray-200 leading-5 group-hover:text-gray-600">
+                    Crearé contenido multimedia único y personalizado, integrando
+                    videos e ilustraciones para enriquecer la experiencia de aprendizaje.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+        <p>
+            &copy; 2025 Armando González Virto. All rights reserved
+        </p>
+    </div>
+    </div>
+    <script>
+        function openMenu() {
+            document.getElementById("sideMenu").style.right = "0";
+        }
+        function closeMenu() {
+            document.getElementById("sideMenu").style.right = "-16rem";
+        }
+    </script>
+</body>
+</html>
