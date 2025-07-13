@@ -28,9 +28,10 @@
         <!-- FIN CORRECCIÓN 1 -->
         <ul
             class="hidden md:flex items-center justify-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
-            <li><a href="#top" class="hover:text-[#4ADE80]">Home</a></li>
+            <li><a href="#top" class="hover:text-[#4ADE80]">Inicio</a></li>
             <li><a href="#about" class="hover:text-[#4ADE80]">Sobre mí</a></li>
             <li><a href="#services" class="hover:text-[#4ADE80]">Servicios</a></li>
+            <li><a href="#contact" class="hover:text-[#4ADE80]">Contacto</a></li>
         </ul>
         <!-- mobile menu -->
         <ul id="sideMenu"
@@ -38,8 +39,10 @@
             <div class="absolute right-6 top-6" onclick="closeMenu()">
                 <img src="./images/close-white.png" alt="" class="w-5 cursor-pointer">
             </div>
+            <li><a href="#top" onclick="closeMenu()">Inicio</a></li>
             <li><a href="#about" onclick="closeMenu()">Sobre mí</a></li>
             <li><a href="#services" onclick="closeMenu()">Servicios</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contacto</a></li>
         </ul>
     </nav>
     <!--header-->
@@ -216,20 +219,46 @@
         </div>
     </div>
     <!--footer-->
-    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
-        <p>
-            &copy; 2025 Armando González Virto. All rights reserved
-        </p>
-    </div>
-    </div>
-    <script>
-        function openMenu() {
-            document.getElementById("sideMenu").style.right = "0";
-        }
-        function closeMenu() {
-            document.getElementById("sideMenu").style.right = "-16rem";
-        }
-    </script>
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20">
+        <div class="text-center">
+            <h4 class="text-center mb-2 text-lg font-Ovo">Contacto</h4>
+
+            <!-- Título con margen inferior -->
+            <h2 class="text-center text-5xl font-Ovo mb-8">Let's Work
+                <span style="color: #4ADE80;">Together!</span>
+            </h2>
+            <!-- Íconos de contacto -->
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <ul class="flex flex-wrap justify-center items-center gap-8 mt-6">
+                    <li>
+                        <a href="https://wa.link/gv7ofw" target="_blank"
+                            class="w-16 h-16 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-green-500 hover:text-green-500 transition duration-300">
+                            <i class="lab la-whatsapp text-4xl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:armando.gonzalez@cybolt.com"
+                            class="w-16 h-16 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-rose-500 hover:text-rose-500 transition duration-300">
+                            <i class="lab las la-envelope text-4xl"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer con margen superior mayor -->
+            <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-20 py-6">
+                <p>
+                    &copy; 2025 Armando González Virto. All rights reserved
+                </p>
+            </div>
+        </div>
+        <script>
+            function openMenu() {
+                document.getElementById("sideMenu").style.right = "0";
+            }
+            function closeMenu() {
+                document.getElementById("sideMenu").style.right = "-16rem";
+            }
+        </script>
 </body>
 
 </html>
