@@ -16,6 +16,16 @@
 
 <body class="overflow-x-hidden font-Outfit bg-[#1F1F1F] text-white">
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-center z-50">
+        <!-- CORRECCIÓN 1: Botón hamburguesa móvil para abrir menú -->
+        <div class="md:hidden absolute left-5 top-5 z-60">
+            <button onclick="openMenu()" aria-label="Abrir menú">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <!-- FIN CORRECCIÓN 1 -->
         <ul
             class="hidden md:flex items-center justify-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
             <li><a href="#top" class="hover:text-[#4ADE80]">Home</a></li>
@@ -23,8 +33,8 @@
             <li><a href="#services" class="hover:text-[#4ADE80]">Servicios</a></li>
         </ul>
         <!-- mobile menu -->
-        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 
-        bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo">
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed top-0 bottom-0 right-[-16rem] w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo">
             <div class="absolute right-6 top-6" onclick="closeMenu()">
                 <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
             </div>
