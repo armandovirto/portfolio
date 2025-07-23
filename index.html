@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Armando Virto</title>
     <link rel="icon" href="./images/portfolio.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <!-- Meta Open Graph -->
     <meta property="og:title" content="Portafolio de Armando Virto" />
@@ -19,6 +20,18 @@
     <script src="./tailwind.config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+        });
+    </script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
@@ -60,9 +73,18 @@
             }
         }
     </style>
+
 </head>
 
 <body class="overflow-x-hidden font-Outfit bg-[#1F1F1F] text-white">
+    <!-- AOS script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
     <nav class="w-full fixed px-4 sm:px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-center z-50">
         <!-- Botón hamburguesa móvil mejorado -->
         <div class="md:hidden absolute right-4 top-4 z-60">
@@ -113,14 +135,18 @@
     <!-- Header mejorado para móviles -->
     <div id="top"
         class="w-full px-4 sm:px-6 max-w-4xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 py-20">
-        <img src="./images/armandoProfile.jpg" alt="Armando Virto" class="rounded-full w-32 sm:w-40 mb-4">
-        <h3 class="flex items-end gap-2 text-lg sm:text-xl md:text-2xl mb-3 font-Ovo">
+        <img src="./images/armandoProfile.jpg" alt="Armando Virto" class="rounded-full w-32 sm:w-40 mb-4"
+            data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="flex items-end gap-2 text-lg sm:text-xl md:text-2xl mb-3 font-Ovo" data-aos="fade-up"
+            data-aos-delay="200">
             Hola, soy <span style="color: #4ADE80;">Armando</span>Virto
         </h3>
-        <h1 class="text-responsive-xl sm:text-4xl md:text-5xl lg:text-[66px] font-Ovo leading-tight">
+        <h1 class="text-responsive-xl sm:text-4xl md:text-5xl lg:text-[66px] font-Ovo leading-tight" data-aos="fade-up"
+            data-aos-delay="300">
             Diseñador Instruccional
         </h1>
-        <p class="max-w-xl sm:max-w-2xl mx-auto font-Ovo text-sm sm:text-base px-4">
+        <p class="max-w-xl sm:max-w-2xl mx-auto font-Ovo text-sm sm:text-base px-4" data-aos="fade-up"
+            data-aos-delay="400">
             Creo experiencias de aprendizaje únicas, combinando
             <span style="color: #4ADE80;">creatividad</span>,
             <span style="color: #4ADE80;">tecnología</span> y
@@ -129,25 +155,25 @@
 
         <!-- Social links mejorados -->
         <ul class="flex flex-wrap justify-center items-center gap-3 sm:gap-4 mt-6 px-4">
-            <li>
+            <li data-aos="fade-up" data-aos-delay="500">
                 <a href="https://pk.linkedin.com/in/armandovirto" target="_blank"
                     class="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-[#0A66C2] hover:text-[#0A66C2] transition duration-300">
                     <i class="lab la-linkedin-in text-xl sm:text-2xl"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="600">
                 <a href="https://github.com/armandovirto" target="_blank"
                     class="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-[#6e40c9] hover:text-[#6e40c9] transition duration-300">
                     <i class="lab la-github text-xl sm:text-2xl"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="700">
                 <a href="https://wa.link/gv7ofw" target="_blank"
                     class="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-green-500 hover:text-green-500 transition duration-300">
                     <i class="lab la-whatsapp text-xl sm:text-2xl"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="800">
                 <a href="mailto:armando.gonzalez@cybolt.com"
                     class="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-rose-500 hover:text-rose-500 transition duration-300">
                     <i class="lab las la-envelope text-xl sm:text-2xl"></i>
@@ -158,18 +184,22 @@
 
     <!-- Services section mejorada -->
     <div id="services" class="w-full px-10 sm:px-6 md:px-8 lg:px-[12%] py-16 scroll-mt-20">
-        <h4 class="text-center mb-2 text-base sm:text-lg font-Ovo">Mis servicios</h4>
-        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo mb-4">Cómo puedo ayudarte</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-sm sm:text-base px-4">
+        <h4 class="text-center mb-2 text-base sm:text-lg font-Ovo" data-aos="fade-up">Mis servicios</h4>
+        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo mb-4" data-aos="fade-up" data-aos-delay="100">
+            Cómo puedo ayudarte</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-sm sm:text-base px-4" data-aos="fade-up"
+            data-aos-delay="200">
             Combino diseño instruccional, programación y diseño visual para crear soluciones de aprendizaje que
             conectan, funcionan y se disfrutan.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 my-10">
             <div class="group border border-green-400 rounded-lg p-8 sm:px-8 sm:py-12 
-                hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#FFFFFF] hover:-translate-y-1 duration-500">
+            hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#FFFFFF] hover:-translate-y-1 duration-500"
+                data-aos="fade-up" data-aos-delay="300">
                 <img src="./images/mindmeister.png" alt="" class="w-8 sm:w-10 mb-4">
-                <h3 class="text-base sm:text-lg mb-4 text-gray-300 group-hover:text-gray-700 font-medium">Consultoría
+                <h3 class="text-base sm:text-lg mb-4 text-gray-300 group-hover:text-gray-700 font-medium">
+                    Consultoría
                 </h3>
                 <p class="text-sm sm:text-sm text-gray-200 leading-5 group-hover:text-gray-600">
                     Juntos identificamos las necesidades de tu organización y
@@ -177,9 +207,11 @@
                 </p>
             </div>
             <div class="group border border-green-400 rounded-lg p-6 sm:px-8 sm:py-12 
-                hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#FFFFFF] hover:-translate-y-1 duration-500">
+            hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#FFFFFF] hover:-translate-y-1 duration-500"
+                data-aos="fade-up" data-aos-delay="400">
                 <img src="./images/canva.png" alt="" class="w-8 sm:w-10 mb-4">
-                <h3 class="text-base sm:text-lg mb-4 text-gray-300 group-hover:text-gray-700 font-medium">Storyboarding
+                <h3 class="text-base sm:text-lg mb-4 text-gray-300 group-hover:text-gray-700 font-medium">
+                    Storyboarding
                 </h3>
                 <p class="text-sm sm:text-sm text-gray-200 leading-5 group-hover:text-gray-600">
                     Tras definir los objetivos y necesidades del proyecto,
@@ -187,9 +219,11 @@
                 </p>
             </div>
             <div class="group border border-green-400 rounded-lg p-6 sm:px-8 sm:py-12 
-                hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#FFFFFF] hover:-translate-y-1 duration-500">
+            hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#FFFFFF] hover:-translate-y-1 duration-500"
+                data-aos="fade-up" data-aos-delay="500">
                 <img src="./images/storyline.png" alt="" class="w-8 sm:w-10 mb-4">
-                <h3 class="text-base sm:text-lg mb-4 text-gray-300 group-hover:text-gray-700 font-medium">Desarrollo de
+                <h3 class="text-base sm:text-lg mb-4 text-gray-300 group-hover:text-gray-700 font-medium">Desarrollo
+                    de
                     e-Learning</h3>
                 <p class="text-sm sm:text-sm text-gray-200 leading-5 group-hover:text-gray-600">
                     Exploraremos opciones de desarrollo y elegirás el diseño
@@ -197,9 +231,12 @@
                 </p>
             </div>
             <div class="group border border-green-400 rounded-lg p-6 sm:px-8 sm:py-12 
-                hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#FFFFFF] hover:-translate-y-1 duration-500">
+            hover:shadow-[4px_4px_0_#4ADE80] cursor-pointer hover:bg-[#FFFFFF] hover:-translate-y-1 duration-500"
+                data-aos="fade-up" data-aos-delay="600">
                 <img src="./images/media-icon.png" alt="" class="w-8 sm:w-10 mb-4">
-                <h3 class="text-base sm:text-lg mb-4 text-gray-300 group-hover:text-gray-700 font-medium">Creación de multimedia</h3>
+                <h3 class="text-base sm:text-lg mb-4 text-gray-300 group-hover:text-gray-700 font-medium">Creación
+                    de
+                    multimedia</h3>
                 <p class="text-sm sm:text-sm text-gray-200 leading-5 group-hover:text-gray-600">
                     Crearé contenido multimedia único y personalizado, integrando
                     videos e ilustraciones para enriquecer la experiencia de aprendizaje.
@@ -208,18 +245,22 @@
         </div>
     </div>
 
+
     <!-- About me section mejorada -->
     <div id="about" class="w-full px-10 sm:px-6 md:px-8 lg:px-[12%] py-16 scroll-mt-20">
-        <h4 class="text-center mb-2 text-base font-Ovo sm:text-lg">Sobre mí</h4>
-        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo mb-8">Perfil profesional</h2>
+        <h4 class="text-center mb-2 text-base font-Ovo sm:text-lg" data-aos="fade-up">Sobre mí</h4>
+        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo mb-8" data-aos="fade-up" data-aos-delay="100">
+            Perfil profesional
+        </h2>
 
         <div class="flex w-full flex-col lg:flex-row items-center gap-8 lg:gap-10 my-10">
-            <div class="w-full lg:w-auto flex justify-center lg:justify-start">
+            <div class="w-full lg:w-auto flex justify-center lg:justify-start" data-aos="fade-right"
+                data-aos-delay="200">
                 <img src="./images/armandoAboutMe.png" alt="Armando González Virto"
                     class="w-56 sm:w-64 lg:w-80 rounded-3xl max-w-none" />
             </div>
 
-            <div class="flex-1 w-full">
+            <div class="flex-1 w-full" data-aos="fade-left" data-aos-delay="300">
                 <p class="mb-8 lg:mb-10 text-sm sm:text-base lg:text-lg text-gray-300 font-Ovo leading-relaxed">
                     Soy un diseñador instruccional con formación en Filosofía por la UNAM, apasionado por
                     transformar el aprendizaje en una experiencia significativa y motivadora. Mi objetivo es crear
@@ -229,8 +270,8 @@
                 </p>
 
                 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8">
-                    <li
-                        class="border-[0.5px] border-green-400 rounded-xl p-8 sm:p-6 cursor-pointer hover:bg-[#F43E5C] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#CCCCCC]">
+                    <li class="border-[0.5px] border-green-400 rounded-xl p-8 sm:p-6 cursor-pointer hover:bg-[#F43E5C] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#CCCCCC]"
+                        data-aos="fade-up" data-aos-delay="400">
                         <a href="https://cybolt.com/latam/" target="_blank" rel="noopener noreferrer" class="block">
                             <img src="./images/project-icon.png" alt="" class="w-6 sm:w-7 mb-3 max-w-full" />
                             <h3 class="mb-3 font-semibold text-green-400 text-base sm:text-base">Experiencia</h3>
@@ -238,8 +279,8 @@
                                 Cybolt</p>
                         </a>
                     </li>
-                    <li
-                        class="border-[0.5px] border-green-400 rounded-xl p-8 sm:p-6 cursor-pointer hover:bg-[#0A66C2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#CCCCCC]">
+                    <li class="border-[0.5px] border-green-400 rounded-xl p-8 sm:p-6 cursor-pointer hover:bg-[#0A66C2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#CCCCCC]"
+                        data-aos="fade-up" data-aos-delay="500">
                         <a href="https://online.lifelonglearning.jhu.edu/jhu-certificate-program-applied-generative-ai"
                             target="_blank" rel="noopener noreferrer" class="block">
                             <img src="./images/edu-icon.png" alt="" class="w-6 sm:w-7 mb-3 max-w-full" />
@@ -248,14 +289,14 @@
                                 Hopkins University</p>
                         </a>
                     </li>
-                    <li
-                        class="border-[0.5px] border-green-400 rounded-xl p-8 sm:p-6 cursor-pointer hover:bg-[#00a3a8] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#CCCCCC]">
+                    <li class="border-[0.5px] border-green-400 rounded-xl p-8 sm:p-6 cursor-pointer hover:bg-[#00a3a8] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#CCCCCC]"
+                        data-aos="fade-up" data-aos-delay="600">
                         <img src="./images/foco.png" alt="" class="w-6 sm:w-7 mb-3 max-w-full" />
                         <h3 class="mb-3 font-semibold text-green-400 text-base sm:text-base">Habilidades</h3>
                         <p class="text-white text-sm sm:text-sm">Articulate Storyline, Rise 360, Moodle LMS</p>
                     </li>
-                    <li
-                        class="border-[0.5px] border-green-400 rounded-xl p-8 sm:p-6 cursor-pointer hover:bg-[#6e40c9] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#CCCCCC]">
+                    <li class="border-[0.5px] border-green-400 rounded-xl p-8 sm:p-6 cursor-pointer hover:bg-[#6e40c9] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#CCCCCC]"
+                        data-aos="fade-up" data-aos-delay="700">
                         <img src="./images/code-icon.png" alt="" class="w-6 sm:w-7 mb-3 max-w-full" />
                         <h3 class="mb-3 font-semibold text-green-400 text-base sm:text-base">Lenguajes</h3>
                         <p class="text-white textsm sm:text-sm">HTML, CSS, R, Python</p>
@@ -263,58 +304,61 @@
                 </ul>
 
                 <!-- Tools section mejorada -->
-                <h4 class="mb-4 sm:mb-6 text-gray-200 font-Ovo text-sm sm:text-base">Herramientas que utilizo</h4>
+                <h4 class="mb-4 sm:mb-6 text-gray-200 font-Ovo text-sm sm:text-base" data-aos="fade-up"
+                    data-aos-delay="800">
+                    Herramientas que utilizo
+                </h4>
                 <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
-                    <li
-                        class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500">
+                    <li class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500"
+                        data-aos="zoom-in" data-aos-delay="900">
                         <img src="./images/vscode.png" alt="" class="w-5 sm:w-7" />
                         <span
                             class="absolute bottom-full mb-2 px-2 py-1 text-xs sm:text-sm text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none text-center whitespace-nowrap">
                             Visual Studio
                         </span>
                     </li>
-                    <li
-                        class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500">
+                    <li class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500"
+                        data-aos="zoom-in" data-aos-delay="1000">
                         <img src="./images/storyline.png" alt="" class="w-5 sm:w-7" />
                         <span
                             class="absolute bottom-full mb-2 px-2 py-1 text-xs sm:text-sm text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none text-center whitespace-nowrap">
                             Articulate Storyline
                         </span>
                     </li>
-                    <li
-                        class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500">
+                    <li class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500"
+                        data-aos="zoom-in" data-aos-delay="1100">
                         <img src="./images/rise.png" alt="" class="w-5 sm:w-7" />
                         <span
                             class="absolute bottom-full mb-2 px-2 py-1 text-xs sm:text-sm text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none text-center whitespace-nowrap">
                             Rise 360
                         </span>
                     </li>
-                    <li
-                        class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500">
+                    <li class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500"
+                        data-aos="zoom-in" data-aos-delay="1200">
                         <img src="./images/chatgpt.jpg" alt="" class="w-5 sm:w-7" />
                         <span
                             class="absolute bottom-full mb-2 px-2 py-1 text-xs sm:text-sm text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none text-center whitespace-nowrap">
                             ChatGPT
                         </span>
                     </li>
-                    <li
-                        class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500">
+                    <li class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500"
+                        data-aos="zoom-in" data-aos-delay="1300">
                         <img src="./images/canva.png" alt="" class="w-5 sm:w-7" />
                         <span
                             class="absolute bottom-full mb-2 px-2 py-1 text-xs sm:text-sm text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none text-center whitespace-nowrap">
                             Canva
                         </span>
                     </li>
-                    <li
-                        class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500">
+                    <li class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500"
+                        data-aos="zoom-in" data-aos-delay="1400">
                         <img src="./images/capcut.png" alt="" class="w-5 sm:w-7" />
                         <span
                             class="absolute bottom-full mb-2 px-2 py-1 text-xs sm:text-sm text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none text-center whitespace-nowrap">
                             CapCut
                         </span>
                     </li>
-                    <li
-                        class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500">
+                    <li class="relative group flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 hover:border-[#4ADE80] duration-500"
+                        data-aos="zoom-in" data-aos-delay="1500">
                         <img src="./images/moddle.png" alt="" class="w-5 sm:w-7" />
                         <span
                             class="absolute bottom-full mb-2 px-2 py-1 text-xs sm:text-sm text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none text-center whitespace-nowrap">
@@ -326,24 +370,26 @@
         </div>
     </div>
 
+
     <!-- Contact section mejorada -->
     <div id="contact" class="w-full px-4 sm:px-6 md:px-8 lg:px-[12%] py-16 scroll-mt-20">
         <div class="text-center">
-            <h4 class="text-center mb-2 text-base sm:text-lg font-Ovo">Contáctame</h4>
-            <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo mb-8">
+            <h4 class="text-center mb-2 text-base sm:text-lg font-Ovo" data-aos="fade-up">Contáctame</h4>
+            <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo mb-8" data-aos="fade-up"
+                data-aos-delay="100">
                 ¡Trabajemos <span style="color: #4ADE80;">juntos!</span>
             </h2>
 
             <!-- Contact icons mejorados -->
-            <div class="w-max flex items-center gap-2 mx-auto">
+            <div class="w-max flex items-center gap-2 mx-auto" data-aos="zoom-in" data-aos-delay="200">
                 <ul class="flex flex-wrap justify-center items-center gap-6 sm:gap-8 mt-6">
-                    <li>
+                    <li data-aos="zoom-in" data-aos-delay="300">
                         <a href="https://wa.link/gv7ofw" target="_blank"
                             class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-green-500 hover:text-green-500 transition duration-300">
                             <i class="lab la-whatsapp text-3xl sm:text-4xl"></i>
                         </a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in" data-aos-delay="400">
                         <a href="mailto:armando.gonzalez@cybolt.com"
                             class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-full border-2 border-white text-white hover:border-rose-500 hover:text-rose-500 transition duration-300">
                             <i class="lab las la-envelope text-3xl sm:text-4xl"></i>
@@ -353,14 +399,15 @@
             </div>
 
             <!-- Footer mejorado -->
-            <div
-                class="text-center sm:flex items-center justify-center border-t border-gray-400 mx-4 sm:mx-[10%] mt-16 sm:mt-20 py-6">
+            <div class="text-center sm:flex items-center justify-center border-t border-gray-400 mx-4 sm:mx-[10%] mt-16 sm:mt-20 py-6"
+                data-aos="fade-up" data-aos-delay="500">
                 <p class="text-xs sm:text-sm text-gray-300">
                     &copy; 2025 Armando González Virto. Todos los derechos reservados.
                 </p>
             </div>
         </div>
     </div>
+
 
     <script>
         function openMenu() {
@@ -395,6 +442,16 @@
             }
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+        });
+    </script>
+
 </body>
 
 </html>
